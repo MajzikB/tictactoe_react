@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333333;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+h1 {
+  margin: 2rem;
+}
+
+.board {
+  border: 1rem solid #efc47c;
+  background: #efc47c;
+  /*width: 700px;
+  height: 800px;*/
+  width: 500px;
+  height: 500px;
+  display: grid;
+  /*grid-template: repeat(6, 1fr) / repeat(5, 1fr)*/
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  grid-gap: 1rem;
+  gap: 1rem;
+  border-radius: 10px;
+}
+
+.squares {
+  background: #efc47c;
+  border: none;
+  font-size: 5rem;
+  /* font-weight: 800; */
+  cursor: pointer;
+  outline: none;
+}
+
+.info-wrapper button.X {
+  color: #0073e6;
+}
+
+.info-wrapper button.O {
+  color: #fa5057;
+}
+
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  margin: 0px 35px 0px 60px;
+}
+
+.box li {
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.box li button {
+  font-size: 15px;
+  padding: 13px;
+  border-radius: 10px;
+}
+
+.box li:nth-of-type(1) button {
+  background: brown;
+}
+
+h3 {
+  padding: 1rem;
+}
+
+
+.info-wrapper button {
+  background: #272727;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
